@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Address Book</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Address book</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Add a contact:</h2>
+        <form id="new-contact">
+          <div class="form-group">
+            <label for="new-first-name">First name</label>
+            <input type="text" class="form-control" id="new-first-name">
+          </div>
+          <div class="form-group">
+            <label for="new-last-name">Last name</label>
+            <input type="text" class="form-control" id="new-last-name">
+          </div>
+          <div id="new-addresses">
+            <div class="new-address">
+              <div class="form-group">
+                <label for="new-street-name">Street</label>
+                <input type="text" class="form-control new-street" id="new-street-name">
+              </div>
+              <div class="form-group">
+                <label for="new-city-name">City</label>
+                <input type="text" class="form-control new-city" id="new-city-name">
+              </div>
+              <div class="form-group">
+                <label for="new-state-name">State</label>
+                <input type="text" class="form-control new-state" id="new-state-name">
+              </div>
+            </div>
+          </div>
+          <span class="btn btn-info btn-small" id="add">Add Address</span>
+          <button type="submit" class="btn btn-primary btn-small">Add Contact</button>
+        </form>
+
+        <h2>Contacts:</h2>
+        <ul id="contacts">
+
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div id="show-contact">
+          <h2></h2>
+
+          <p>First name: <span class="first-name"></span></p>
+          <p>Last name: <span class="last-name"></span></p>
+          <p>Addresses: </p>
+          <ul class="addresses">
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

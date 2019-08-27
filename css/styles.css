@@ -1,0 +1,21 @@
+.container{
+    padding-top: 30px;
+}
+.row{
+    padding: 30px;
+}
+#show-contact {
+    display: none;
+}
+
+.contact {
+    cursor: pointer;
+    color: #0088cc;
+}
+
+.contact:hover {
+    text-decoration: underline;
+}
+label{
+    font-weight: 2;
+}
